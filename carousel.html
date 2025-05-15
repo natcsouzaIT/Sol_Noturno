@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sol_Noturno</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: rgb(170, 8, 62);
+            z-index: 1000;
+            color: antiquewhite;
+            border-bottom: 20px;
+        }
+        .carousel-item img {
+            max-height: 250px;
+            width: auto;
+            padding: 8px;
+            object-fit: cover;
+        }
+        .card {
+            padding: 6px;
+            margin: 20px ;
+        }
+        #about, #contato {
+            color: antiquewhite;
+        }
+    </style>
+</head>
+<header id="cabecalho">
+    <div class="container">
+        <div class="navbar">
+        <h1>Sol Noturno</h1>
+        <nav>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" href="#produtos">Produtos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Sobre a Loja</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    </div>
+</header>
+<body>
+    <div class="container">
+        <div id="carousel-exemplo" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval= "3000" class="carousel-item active">
+                    <img class="d-block w-100" src="img/angulo-alto-de-velas-acesas-com-barbante-e-pinhas_23-2148720016.jpg"/>
+                </div>
+                <div data-bs-interval= "3000" class="carousel-item">
+                    <img class="d-block w-100" src="img/natureza-morta-aconchegante-com-velas-diferentes-na-cama_169016-6231.jpg"/>
+                </div>
+                <div data-bs-interval= "3000" class="carousel-item">
+                    <img class="d-block w-100" src="img/pilha-livros-vela-copo_23-2147617734.jpg"/>
+                </div>
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </div>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section class="container grid" id="produtos">
+            <div class="container" id="cards">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card text-bg-dark">
+                        <div class="card-header">
+                            Vela 1
+                        </div>
+                        <img src="img/vela-ardente-e-pao-de-gengibre-de-fundo_206268-8579.avif"/>
+                        <div class="card-body">
+                            <h4 class="card-title">Nome da Vela</h4>
+                            <p class="card-text">Descrição das propriedades da vela ou kit</p>
+                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card text-bg-dark">
+                        <div class="card-header">
+                            Vela 1
+                        </div>
+                        <img src="img/uma-vela-que-e-acesa-com-as-palavras-vela-sobre-ele_1049408-919.jpg"/>
+                        <div class="card-body">
+                            <h4 class="card-title">Nome da Vela</h4>
+                            <p class="card-text">Descrição das propriedades da vela ou kit</p>
+                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card ">
+                        <div class="card-header">
+                            Kit
+                        </div>
+                        <img src="img/uma-composicao-aconchegante-com-velas-um-elemento-de-trico-e-uma-guirlanda_169016-48476.avif"/>
+                        <div class="card-body">
+                            <h4 class="card-title">Nome da Vela</h4>
+                            <p class="card-text">Descrição das propriedades da vela ou kit</p>
+                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card ">
+                        <div class="card-header">
+                            Kit
+                        </div>
+                        <img src="img/uma-composicao-aconchegante-com-velas-um-elemento-de-trico-e-uma-guirlanda_169016-48476.avif"/>
+                        <div class="card-body">
+                            <h4 class="card-title">Nome da Vela</h4>
+                            <p class="card-text">Descrição das propriedades da vela ou kit</p>
+                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card ">
+                        <div class="card-header">
+                            Kit
+                        </div>
+                        <img src="img/uma-composicao-aconchegante-com-velas-um-elemento-de-trico-e-uma-guirlanda_169016-48476.avif"/>
+                        <div class="card-body">
+                            <h4 class="card-title">Nome da Vela</h4>
+                            <p class="card-text">Descrição das propriedades da vela ou kit</p>
+                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            Kit
+                        </div>
+                        <img src="img/uma-composicao-aconchegante-com-velas-um-elemento-de-trico-e-uma-guirlanda_169016-48476.avif"/>
+                        <div class="card-body">
+                            <h4 class="card-title">Nome da Vela</h4>
+                            <p class="card-text">Descrição das propriedades da vela ou kit</p>
+                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        Sobre a loja
+    </section>
+    <section id="contato">
+        Contato
+    </section>
+    </div>
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
